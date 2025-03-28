@@ -8,9 +8,9 @@ pipeline {
     parameters {
         string(name: 'AWS_REGION', defaultValue: 'us-east-1', description: 'AWS region')
         string(name: 'ECR_REPO', defaultValue: 'my-nodejs-application', description: 'ECR repository name')
-        string(name: 'ECR_URL', defaultValue: '600627355369.dkr.ecr.us-east-1.amazonaws.com/my-nodejs-application', description: 'ECR registry URL')
+        string(name: 'ECR_URL', defaultValue: 'Account_ID.dkr.ecr.us-east-1.amazonaws.com/my-nodejs-application', description: 'ECR registry URL')
         string(name: 'EC2_USER', defaultValue: 'ubuntu', description: 'EC2 SSH username')
-        string(name: 'EC2_HOST', defaultValue: '23.22.186.133', description: 'EC2 instance IP')
+        string(name: 'EC2_HOST', defaultValue: 'Public Address of server', description: 'EC2 instance IP')
         string(name: 'CONTAINER_PORT', defaultValue: '4000', description: 'Port exposed by the container')
         string(name: 'GIT_BRANCH', defaultValue: 'main', description: 'Enter the branch name to deploy')
     }
